@@ -1,0 +1,885 @@
+/*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1570px) {
+    ul.contact {
+        display: none;
+    }
+    ul.contact div.phone {
+        display: none;
+    }
+    ul.contact div.follow,
+    ul.contact div.follow span {
+        display: block;
+    }
+    ul.contact li {
+        position: relative;
+        top: 0;
+        right: 0 !important;
+        display: inline-block;
+    }
+    ul.contact div.follow img {
+        position: relative;
+        display: block;
+        width: 38px;
+        height: 38px;
+    }
+    input[id='follow-button']:checked ~ ul.contact:before {
+        position: absolute;
+        top: -9px;
+        right: 12px;
+        width: 0;
+        height: 0;
+        content: '';
+        border-top: 0 solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 10px solid white;
+        border-left: 8px solid transparent;
+    }
+    input[id='follow-button']:checked ~ ul.contact {
+        position: fixed;
+        z-index: 10;
+        top: 85px;
+        right: 3.4%;
+        display: block;
+        padding: 10px 13px;
+        border-radius: 6px;
+        background-color: white;
+        box-shadow: 0 0 5px white;
+    }
+    label[for='follow-button'] {
+        font-size: 28px;
+        position: relative;
+        top: -10px;
+        display: inline-block;
+        float: right;
+        width: 40px;
+        height: 40px;
+        color: white;
+        border-radius: 50%;
+    }
+    label[for='follow-button']:hover {
+        //box-shadow: 0 0 12px rgb(255, 255, 255);
+        text-shadow: 0 -1px 4px rgb(255, 255, 255);
+    }
+    label[for='follow-button']:active {
+        transform: scale(.95);
+    }
+    label[for='follow-button'] i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-56%, -50%);
+    }
+    ul.contact span {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 8px;
+        color: black;
+    }
+    div.section.info-page div.info-block {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    h1.main-title {
+        font-size: 40px;
+        line-height: 51px;
+    }
+    h2.title {
+        font-size: 34px;
+    }
+    h2.title-sm,
+    p.title-sm {
+        font-size: 30px;
+    }
+    p.desc {
+        font-size: 18px;
+    }
+    p.desc-sm {
+        font-size: 16px;
+    }
+    p.desc-smsm {
+        font-size: 14px;
+    }
+    p.item-title {
+        font-size: 18px;
+        line-height: 19px;
+        margin: 0 0 10px 0;
+    }
+    p.item-desc {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+    }
+
+
+    ul.menu > li:first-of-type {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    nav div.menu-links {
+        position: fixed;
+        top: 80px;
+        overflow: auto;
+        height: 100%;
+        transition: all .1s ease-out;
+        transform: translateX(-150%);
+    }
+    nav div.submenu-links {
+        display: block;
+        margin: 40px 0;
+    }
+    nav div.submenu-links span {
+        font-size: 20px;
+        display: block;
+        margin: 0 0 10px 15px;
+    }
+    nav div.submenu-links a.phone {
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        display: block;
+        margin: 30px 0;
+        padding-left: 30px;
+        color: black;
+    }
+    nav div.submenu-links a.phone i {
+        font-size: 24px;
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        transform: rotate(7deg);
+    }
+    nav div.submenu-links a.order {
+        font-size: 18px;
+        position: relative;
+        display: block;
+        margin-top: 18px;
+        margin-bottom: 60px;
+        padding: 7px 25px;
+        text-align: center;
+        color: black;
+        border: 3px solid gold;
+        background-color: transparent;
+    }
+    nav div.submenu-links a.order:focus,
+    nav div.submenu-links a.order:hover {
+        color: gold;
+        background-color: black;
+    }
+    nav div.menu-links li {
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    ul.menu div li {
+        display: block;
+        margin-bottom: 0;
+        padding: 8px 14px;
+        border-bottom: 1px solid #989898;
+    }
+    ul.menu div li:hover {
+        background-color: #f8f8f8;
+    }
+    ul.menu div li:last-of-type {
+        border: none;
+    }
+    ul.menu div li a {
+        font-size: 14px;
+        display: block;
+        color: #337ab7 !important;
+        border-bottom: none;
+        text-shadow: none;
+    }
+    ul.menu div li a:hover {
+        transform: scale(1.05);
+    }
+    ul.menu div li a.active {
+        color: #337ab7 !important;
+        border-bottom: none !important;
+        text-shadow: none !important;
+    }
+    input[id='menu-button']:checked ~ div.menu-links {
+        position: fixed;
+        z-index: 10;
+        top: 80px;
+        left: 0;
+        display: table-caption;
+        padding: 15px 15px;
+        transform: translateX(0%);
+        background-color: white;
+        box-shadow: 3px 1px 10px 3px rgba(74, 74, 74, .25);
+    }
+    label[for='menu-button'] {
+        font-size: 28px;
+        position: relative;
+        top: -10px;
+        display: inline-block;
+        float: right;
+        width: 40px;
+        height: 40px;
+        color: white;
+        border-radius: 50%;
+    }
+    label[for='menu-button']:hover {
+        //box-shadow: 0 0 12px rgb(255, 255, 255);
+        text-shadow: 0 -1px 4px rgb(255, 255, 255);
+    }
+    label[for='menu-button']:active {
+        transform: scale(.95);
+    }
+    label[for='menu-button'] i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+    }
+}
+
+
+/* Larger Devices, Wider Screens */
+@media only screen and (max-width: 1600px) {
+    div.section.franchise-page div.row.lower div.arrow-box {
+        width: 100%;
+        padding: 30px 15px 70px 15px;
+        border-radius: 3px 3px 0 0;
+    }
+    div.arrow-box-container {
+        padding: 0;
+    }
+    div.info-block {
+        width: 90%;
+        margin: 0 auto;
+    }
+    div.section.franchise-page div.row.lower div.arrow-box:after {
+        content: '';
+        border-right: 585px solid transparent;
+        border-left: 585px solid transparent;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    .logo-main img {
+        width: 65%;
+        margin-top: 12%;
+    }
+    div.section.functionality-page {
+        padding: 30px 0 20px 0;
+    }
+    div.section.functionality-page img.instastar-dark {
+        position: static;
+        width: 90%;
+    }
+    div.section:nth-of-type(5) div.container {
+        width: 100%;
+    }
+    div.section.franchise-page div.get-block div.item {
+        width: 33%;
+    }
+    div.section.franchise-page div.arrow-box div.get-block {
+        width: 95%;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    div.section.main-page {
+        padding: 40px 15px;
+    }
+    div.section.description-page .terminal-img img {
+        width: 230px;
+        padding-top: 10px;
+    }
+    input[id='menu-button']:checked ~ div.menu-links {
+        top: 70px;
+    }
+    label[for='menu-button'] {
+        top: -15px;
+    }
+    label[for='follow-button'] {
+        top: -15px;
+    }
+    nav {
+        height: 70px;
+    }
+    ul.menu li:first-of-type img {
+        width: 160px;
+    }
+    .logo-main img {
+        margin-top: 10%;
+    }
+    ul.sep-dotted {
+        margin: 20px auto;
+    }
+    ul.sep-dotted li {
+        width: 11px;
+        height: 11px;
+        margin-right: 5%;
+    }
+    div.section.description-page div.description-block {
+        padding-left: 55px;
+    }
+    div.section.description-page div.description-block div.intro-block {
+        margin-bottom: 32px;
+    }
+    div.section.description-page div.description-block div.advantages-block {
+        margin-bottom: 35px;
+    }
+    div.section.description-page div.description-block div.advantages-block ul li {
+        font-size: 16px;
+    }
+    div.section.description-page div.price-block {
+        font-size: 18px;
+    }
+    div.section.description-page div.price-block ul li {
+        width: 49%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    div.section.functionality-page div.item {
+        width: 100%;
+    }
+    div.section.functionality-page img.instastar-dark {
+        position: absolute;
+        width: 75%;
+        transform: translateY(30%);
+    }
+    div.section.franchise-page div.arrow-box div.get-block {
+        position: relative;
+        left: -50px;
+        max-width: 380px;
+    }
+    div.section.franchise-page div.get-block div.item {
+        float: none !important;
+        width: 100%;
+        margin-right: 0;
+    }
+    div.section.contact-page div.outbox-logo::after,
+    div.section.contact-page div.outbox-share::after {
+        display: none;
+    }
+    div.section.contact-page div.outbox-logo,
+    div.section.contact-page div.outbox-share {
+        width: 100%;
+        border-radius: 0;
+    }
+    footer img.terminal-clipped {
+        display: none;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    nav {
+        height: 70px;
+    }
+    ul.menu li:first-of-type img {
+        width: 160px;
+    }
+    .logo-main img {
+        width: 90%;
+        margin-top: 12%;
+    }
+    ul.sep-dotted li {
+        width: 9px;
+        height: 9px;
+        margin-right: 5.2%;
+    }
+    h1.main-title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    div#hello .cooperate,
+    div#hello .contact {
+        float: none !important;
+        width: 270px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    p.language-selector {
+        display: none;
+    }
+    div.section.description-page {
+        padding: 0 0 100px 0;
+    }
+    div.section.description-page .terminal-img {
+        padding-top: 70px;
+        box-shadow: inset 0 0 60px grey;
+    }
+    div.section.description-page .terminal-img img {
+        position: relative;
+        left: 50%;
+        width: 255px;
+        margin: 0 0 -120px 0;
+        transform: translateX(-50%);
+    }
+    div.section.description-page div.description-block {
+        line-height: 27px;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        background-color: white;
+    }
+    div.section.functionality-page div.row.content {
+        margin-top: 25px;
+    }
+    div.section.functionality-page img.instastar-dark {
+        display: none;
+    }
+    div.section.functionality-page div.item-block {
+        margin-top: 0;
+    }
+    div.section.functionality-page div.item {
+        float: none;
+        width: 100%;
+        margin: 0 auto 25px auto !important;
+    }
+    div.section.franchise-page div.row.upper > div.tile-container {
+        border: none;
+    }
+    div.section.franchise-page div.row.upper {
+        display: block;
+        margin-bottom: 60px;
+    }
+    div.section.franchise-page div.row.upper > div.tile-container:nth-of-type(2n+1) {
+        border-right: 1px solid black;
+    }
+    div.section.franchise-page div.tile-container:nth-of-type(2) div.item {
+        border-bottom: 1px solid black;
+    }
+    div.section.franchise-page div.tile-container:nth-of-type(1) div.item {
+        border-bottom: 1px solid black;
+    }
+    div.section.franchise-page div.arrow-box div.item-block {
+        max-width: 390px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div.section.franchise-page div.arrow-box div.plusses-section {
+        width: 95%;
+    }
+    div.section.franchise-page div.arrow-box div.plusses-section div.item-block {
+        max-width: 100%;
+    }
+    div.section.franchise-page div.arrow-box div.plusses-section div.item {
+        margin-bottom: 40px;
+    }
+    div.section.franchise-page div.arrow-box div.item-block div.item:not(:last-of-type):after {
+        top: 87%;
+        left: 42px;
+        content: '';
+        transform: rotate(90deg);
+    }
+    div.section.franchise-page div.arrow-box div.item-block div.item {
+        display: block;
+        margin: 0 0 65px 0;
+    }
+    div.section.info-page {
+        padding-top: 20px;
+    }
+    div.section.contact-page {
+        padding-top: 30px;
+        padding-bottom: 665px;
+    }
+    div.section.contact-page h2 {
+        margin-bottom: 60px;
+    }
+    div.section.contact-page div.contact-form,
+    div.section.contact-page div.share-block {
+        margin: 0 auto;
+    }
+    div.section.contact-page div.share-block {
+        min-width: 328px;
+        max-width: 470px;
+    }
+    div.section.contact-page div.outbox-logo {
+        margin-top: 60px;
+    }
+    div.section.contact-page div.outbox-share {
+        margin-top: 0;
+        text-align: center;
+    }
+    footer div.row.upper > div {
+        float: none;
+        min-width: 280px;
+        max-width: 320px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid grey;
+    }
+    footer div.row.upper > div:last-of-type {
+        margin-bottom: 5px;
+        border-bottom: none;
+    }
+    footer div.row.lower > div {
+        position: relative;
+        float: none;
+        min-width: 280px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    footer div.row.lower > div:nth-child(2) {
+        padding-bottom: 12px;
+        border-bottom: 1px solid grey;
+    }
+    footer div.row.lower > div > img {
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media only screen and (max-width: 600px) {
+    div.price-block::before,
+    div.price-container::after {
+        left: 18px;
+    }
+    div.price-block::after,
+    div.price-container::before {
+        right: 18px;
+    }
+    div.section.description-page div.price-block > div::before {
+        top: 5%;
+        left: 50%;
+        content: '₽';
+        transform: translateX(-50%);
+    }
+    div.section.description-page div.price-block > div p {
+        margin-bottom: 40px;
+    }
+    div.section.description-page div.price-block {
+        margin: 0 15px;
+        padding: 150px 30px 40px 30px;
+        text-align: center;
+    }
+    div.section.description-page div.price-block > div {
+        padding: 20px 25px;
+        border: none;
+        border-top: 1px solid gold;
+    }
+    div.section.description-page div.price-block ul li {
+        position: relative;
+        display: block;
+        width: 145px;
+        margin-right: auto !important;
+        margin-bottom: 40px;
+        margin-left: auto !important;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    h1.main-title {
+        font-size: 26px;
+        line-height: 42px;
+    }
+    ul.sep-dotted {
+        margin: 14px auto;
+    }
+    ul.sep-dotted li {
+        width: 5px;
+        height: 5px;
+        margin-right: 4.9%;
+    }
+    h2.title {
+        font-size: 30px;
+        text-align: center;
+    }
+    h2.title-sm,
+    p.title-sm {
+        font-size: 28px;
+    }
+    nav {
+        height: 55px;
+        padding: 23px 3%;
+    }
+    nav div.menu-links {
+        top: 55px;
+    }
+    input[id='menu-button']:checked ~ div.menu-links {
+        top: 55px;
+    }
+    label[for='menu-button'],
+    label[for='follow-button'] {
+        font-size: 24px;
+        border: none;
+        text-shadow: none;
+    }
+    label[for='menu-button']:hover,
+    label[for='follow-button']:hover {
+        box-shadow: none;
+        text-shadow: 0 -1px 4px rgb(255, 255, 255);
+    }
+    ul.menu li:first-of-type img {
+        width: 125px;
+        margin-top: 4px;
+    }
+    div.row.logo {
+        margin-bottom: 15px;
+    }
+    .logo-main img {
+        width: 90%;
+        margin-top: 17%;
+    }
+    div.row.description > div {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    div#hello .cooperate,
+    div#hello .contact {
+        margin: 10px auto;
+    }
+    div.arrow-down-block {
+        bottom: 35px;
+    }
+    div.section.functionality-page div.item {
+        padding: 15px;
+        padding-left: 120px;
+        border-radius: 5px;
+    }
+    div.section.franchise-page div.row.upper {
+        margin-bottom: 0;
+    }
+    div.section.franchise-page div.row.upper > div.tile-container {
+        width: 100%;
+        border: none !important;
+    }
+    div.section.franchise-page div.row.upper div.item {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 30px;
+        border: none;
+        border-top: 1px solid black;
+    }
+    div.section.franchise-page div.arrow-box  div.step-section div.item {
+        margin: 0 0 56px 0;
+        padding-left: 97px;
+    }
+    div.section.franchise-page div.arrow-box div.item-block div.item:not(:last-of-type):after {
+        top: 80%;
+        left: 30px;
+        content: '';
+    }
+    div.section.franchise-page div.arrow-box  div.step-section div.item img {
+        top: 18px;
+        left: 18px;
+    }
+    div.section.franchise-page div.arrow-box div.step-section div.item div {
+        top: -1px;
+        width: 80px;
+        height: 80px;
+    }
+    div.section.franchise-page div.arrow-box div.get-block {
+        left: 0;
+        margin: 0 auto 55px auto;
+    }
+    div.section.franchise-page div.get-block div.item {
+        margin: 0;
+        margin-top: 160px;
+        margin-left: 0;
+    }
+    div.section.franchise-page div.get-block div.item:before {
+        top: -62px;
+        left: 60px;
+        content: '';
+        transform: rotate(90deg) skewY(45deg);
+    }
+    div.section.franchise-page div.get-block div.item:after {
+        top: -123px;
+        left: 4px;
+        content: '';
+    }
+    div.info-block div.use-rules,
+    .info-block div.privacy-policy {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    div.section.contact-page div.phone-form {
+        margin-top: 30px;
+        padding: 40px 10px;
+        color: black;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.95);
+    }
+    div.section.contact-page div.h2-label {
+        font-size: 28px;
+        left: 47%;
+        width: 66%;
+        min-width: 270px;
+        max-width: 310px;
+        height: 55px;
+        padding: 5px 10px;
+        transform: translateX(-50%);
+        color: white;
+        border-radius: 0 0 8px 8px;
+        background-color: #62ba78;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 360px) {
+    div.section.contact-page div.phone-form {
+        padding: 30px 10px;
+        border-radius: 0;
+    }
+    div.section.contact-page div.col-xs-12 {
+        padding: 0;
+    }
+    div.section.contact-page div.h2-label:after {
+        display: none;
+    }
+    div.section.contact-page div.h2-label {
+        font-size: 26px;
+        top: -20px;
+        left: 50%;
+        width: 250px;
+        height: 50px;
+    }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 600px) {
+    div.price-container::before,
+    div.price-block::before {
+        left: 0;
+    }
+
+    div.price-container::after,
+    div.price-block::after {
+        right: 0;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+    div.section.description-page div.description-block div.advantages-block ul li {
+        max-width: 470px;
+    }
+    div.section.functionality-page div.row.content div.item-block {
+        margin-top: 15px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Larger Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1570px) {
+    ul.contact div.phone {
+        position: relative;
+        float: left;
+        width: 210px;
+        padding: 4px 15px 5px 0;
+    }
+    ul.contact div.phone a {
+        padding-bottom: 4px;
+        color: white;
+        border-bottom: 1px dotted white;
+    }
+    ul.contact div.phone a:hover {
+        color: gold;
+        border-bottom: none;
+    }
+    ul.contact div.phone div.outbox-callback::before {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        display: block;
+        width: 0;
+        height: 0;
+        content: '';
+        transition: .2s all ease-out;
+        transform: translateX(-50%);
+        border-top-width: 0;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+    }
+    ul.contact div.phone div.outbox-callback {
+        position: relative;
+        left: 50%;
+        visibility: hidden;
+        width: 230px;
+        padding: 20px 25px 10px 25px;
+        transition: .2s all ease-out;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    ul.contact div.phone:hover div.outbox-callback::before {
+        border-bottom: 10px solid white;
+    }
+    ul.contact div.phone:hover div.outbox-callback {
+        position: relative;
+        left: 50%;
+        display: block;
+        visibility: visible;
+        width: 230px;
+        margin-top: 45px;
+        transform: translateX(-50%);
+        color: black !important;
+        border-radius: 2px;
+        background-color: white;
+        box-shadow: 0 0 12px 0 white, 0 0 12px black;
+    }
+    ul.contact div.phone div.outbox-callback p {
+        font-size: 12px;
+        visibility: hidden;
+        margin: 0 auto;
+        transition: .14s all ease-out;
+    }
+    ul.contact div.phone div.outbox-callback a {
+        font-size: 18px;
+        display: block;
+        visibility: hidden;
+        margin: 0 -23px;
+        padding: 5px;
+        transition: .14s all ease-out;
+        color: white;
+        border-bottom: none;
+        border-radius: 2px;
+        background-color: #47af4b;
+    }
+    ul.contact div.phone:hover div.outbox-callback a,
+    ul.contact div.phone:hover div.outbox-callback p {
+        visibility: visible;
+    }
+    ul.contact div.phone div.outbox-callback a:hover {
+        color: white;
+        background-color: rgba(76, 175, 80, .79);
+    }
+    ul.contact div.follow {
+        float: right;
+        padding: 1px 0;
+        padding-left: 10px;
+        border-left: 1px solid gold;
+    }
+    ul.contact div.follow li {
+        display: inline-block;
+        padding-left: 5px;
+    }
+    ul.contact div.follow li img {
+        width: 38px;
+        height: 38px;
+        transition: all .02s ease-in;
+    }
+    ul.contact div.follow li img:hover {
+        transform: scale(1.06);
+    }
+}
+@media only screen and (min-width: 1600px) {
+    div.section.contact-page div.share-block {
+        padding-left: 20px;
+    }
+}
