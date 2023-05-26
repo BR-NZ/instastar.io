@@ -8,3 +8,8 @@
 * Инерактив на JS-минибиблиотеках: jquery, paralax, landing-nav, scrollto, owl-carousel и анимации;
 
 Все делалось в конце 2016 года;
+
+## Задеплоиная версия
+Последний комит в master-ветке задеплоин в vercel и доступен по ссылке:
+
+[instastar-io.vercel.app](https://instastar-io.vercel.app)
